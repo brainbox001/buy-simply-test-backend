@@ -9,6 +9,6 @@ loanRoutes.use(auth);
 loanRoutes.get('/', getAllLoans);
 loanRoutes.get('/:email/get', getLoanByUserEmail);
 loanRoutes.get('/expired', getExpiredLoan);
-loanRoutes.delete('/:id/delete', isSuperAdmin, deleteLoan);
+loanRoutes.delete('/:loanId/delete', isSuperAdmin, deleteLoan);
 
 export default loanRoutes;
